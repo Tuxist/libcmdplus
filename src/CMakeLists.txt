@@ -37,7 +37,7 @@ install(
   FILES
     "libcmdplusConfig.cmake"
     "${CMAKE_CURRENT_BINARY_DIR}/libcmdplusVersion.cmake"
-    "${CMAKE_CURRENT_SOURCE_DIR}/libcmdplusTargets.cmake"
+    "${CMAKE_CURRENT_SOURCE_DIR}/libcmdplusConfig.cmake"
   DESTINATION
     ${ConfigPackageLocation}
   COMPONENT
