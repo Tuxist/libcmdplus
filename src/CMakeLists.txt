@@ -10,7 +10,7 @@ install(TARGETS cmdplus DESTINATION lib EXPORT cmdplusTargets)
 
 install(FILES cmdplus.h DESTINATION include/cmdplus)
 
-set(ConfigPackageLocation lib/cmake/cmdplus)
+set(ConfigPackageLocation lib/cmake/libcmdplus)
 
 export(EXPORT cmdplusTargets
   FILE "${CMAKE_CURRENT_BINARY_DIR}/libcmdplusTargets.cmake"
