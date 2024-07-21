@@ -14,7 +14,7 @@ set(ConfigPackageLocation lib/cmake/libcmdplus)
 
 export(EXPORT cmdplusTargets
   FILE "${CMAKE_CURRENT_BINARY_DIR}/libcmdplusTargets.cmake"
-  NAMESPACE Upstream::
+  NAMESPACE cmdplus::
 )
 
 include(CMakePackageConfigHelpers)
@@ -28,7 +28,7 @@ install(EXPORT cmdplusTargets
   FILE
     libcmdplusTargets.cmake
   NAMESPACE
-    Upstream::
+    cmdplus::
   DESTINATION
     ${ConfigPackageLocation}
 )
