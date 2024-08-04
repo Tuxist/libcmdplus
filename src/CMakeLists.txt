@@ -43,3 +43,17 @@ install(
   COMPONENT
     Devel
 )
+
+if(${CMAKE_HOST_SYSTEM_NAME} MATCHES "Windows")
+    set(CPACK_GENERATOR WIX)
+    set(CPACK_PACKAGE_NAME "libcmdplus")
+    set(CPACK_PACKAGE_VENDOR "tuxist.de")
+    set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_SOURCE_DIR}/LICENSE.txt")
+    set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "libcmdplus - A Commandline Argument Parser Library")
+    set(CPACK_PACKAGE_VERSION "1.0.0")
+    set(CPACK_PACKAGE_VERSION_MAJOR "1")
+    set(CPACK_PACKAGE_VERSION_MINOR "0")
+    set(CPACK_PACKAGE_VERSION_PATCH "0")
+    set(CPACK_PACKAGE_INSTALL_DIRECTORY "libcmdplus")
+    INCLUDE(CPack)
+endif()
