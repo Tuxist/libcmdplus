@@ -4,6 +4,7 @@ cmake_minimum_required(VERSION 3.25)
 include(CMakePackageConfigHelpers)
 
 set(ConfigPackageLocation lib/cmake/libcmdplus)
+set(CMAKE_INSTALL_INCLUDEDIR ${CMAKE_INSTALL_PREFIX}/include)
 
 if(NOT ${CMAKE_CXX_COMPILER} MATCHES "MSVC")
 set(CMAKE_CXX_FLAGS
